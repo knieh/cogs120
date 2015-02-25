@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gruupers</title>
+    <link href="css/index.css" rel="stylesheet"></link>
+    <link href="fullcalendar/fullcalendar.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"></link>
+    <script src="fullcalendar/lib/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="fullcalendar/lib/moment.min.js"></script> 
+    <script src="fullcalendar/fullcalendar.js"></script>
+    <script src="javascript/main.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var day = date.getDay();
+
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+                defaultView: 'basicWeek',
+                editable: true,
+                weekMode: 'liquid',
+                url: '#',
+                events: [
+                ],
+                aspectRatio: 2
+            })
+
+        });
+
+    </script>
+</head>
+
+<body>
+  <!-- This is the bar that will be at every page -->
+  <div class="containerHeader">
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="gruupers" class="list" data-ajax="false">Gruupers</a></li>
+          <li><a href="notifications" class="list" data-ajax="false">Notifications</a></li>
+          <li><a href="profile" class="list" data-ajax="false">Profile</a></li>
+          <li><a href="settings" class="list" data-ajax="false">Settings</a></li>
+          <li><a href="help" class="list" data-ajax="false">Help</a></li>
+          <li><a href="/" class="list" data-ajax="false">Logout</a></li>
+        </ul>
+      </div>          
+        <a href="homepage" id="title" data-ajax="false"><h1><center>Gruupster</center></h1></a>  
+  </div>
+
+
+  <div class="subContainer">
+    <ol class="breadcrumb">
+        <li><a href="homepage" data-ajax="false">Homepage</a></li>
+        <li><a href="gruupUp">GruupUp</a></li>
+        <li><a href='calendar'>Calendar</a></li>
+        <li class="active">Schedule</li>
+      </ol>
+  </div>
+
+  <div class="jumbotron">
+      <div id = "tut_second">
+        <h1><center>Create your schedule!</center></h1>
+        <p>Click on ... to edit your schedule. Your schedule can only be seen and editted by yourself. Click "next" once you finish your schedule!</p>
+      </div>
+      <div id = "tut_first">
+        <h1><center>Use of the Schedule</center></h1>
+        <p>Through your schedule, we can compare it with your friend's schedules when you create an event to find the optimal time(s) to meet with them! Before we create an event, we need to add a friend first.</p>
+        <p><a class="btn btn-primary btn-lg" href="tutorialThree" role="button">Learn More</a></p>
+      </div>
+      <nav>
+        <ul class="pager">
+          <li><a id= "tut_previous">Previous</a></li>
+          <li><a id= "tut_next">Next</a></li>
+        </ul>
+      </nav>
+    </div> <!-- end of jumbotron -->
+    <div id="calendar"></div>
+    
+    <hr>
+   <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

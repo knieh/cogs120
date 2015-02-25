@@ -81,7 +81,6 @@ div.choiceButtons:hover{
   height: 250px;
   width: 250px;
   border-radius: 125px;
-
   cursor: pointer;
   background-color: green;
 }
@@ -90,4 +89,11 @@ div.choiceButtons:hover{
   background-color: green;
 }
 
+.tutorial-former{
+
+}
+
+.tutorial-latter{
+  
+}
 

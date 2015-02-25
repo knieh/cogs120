@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Gruupers</title>
+
+      <link href="fullcalendar/fullcalendar.css" rel="stylesheet"/>
+      <link href="css/index.css" rel="stylesheet"></link>
+      <link href="bootstrap/css/bootstrap.css" rel="stylesheet"></link>
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+
+      <script src="bootstrap/js/bootstrap.js"></script>
+      <script src="javascript/moment.js"></script>
+      <script src="javascript/main.js"></script>
+  </head>
+
+<body>
+
+<div class="containerHeader">
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="gruupers" class="list" data-ajax="false">Gruupers</a></li>
+          <li><a href="notifications" class="list" data-ajax="false">Notifications</a></li>
+          <li><a href="profile" class="list" data-ajax="false">Profile</a></li>
+          <li><a href="settings" class="list" data-ajax="false">Settings</a></li>
+          <li><a href="help" class="list" data-ajax="false">Help</a></li>
+          <li><a href="/" class="list" data-ajax="false">Logout</a></li>
+        </ul>
+      </div>          
+        <a href="#" id="title" data-ajax="false"><h1><center>Gruupster</center></h1></a>  
+  </div>
+<hr>
+
+<div class="jumbotron">
+  <h1><center>Welcome to Gruupster!</center></h1>
+  <h3><center>This is an app that makes scheduling for you and your friends a quick and easy process! Start by creating your own schedule and click on "Edit Schedule."</center></h3>
+</div> <!-- end of jumbotron -->
+
+<section class="squares">
+  <div class="squareButtonsLeft">  
+    <span class="glyphicon glyphicon-pencil" aria-hidden="true" id="createSquare"><p>Gruup Up</p>
+  </div>
+  <div class="squareButtonsRight">  
+    <span class="glyphicon glyphicon-edit" aria-hidden="true" id="editSquare"></span><p>Edit Schedule</p>
+  </div>  
+  <div class="squareButtonsLeft">  
+    <span class="glyphicon glyphicon-calendar" aria-hidden="true" id="calSquare"><p>Calendar</p>
+  </div>  
+  <div class="squareButtonsRight">  
+    <span class="glyphicon glyphicon-user" aria-hidden="true" id="friendSquare"><p>Friends</p>  
+  </div>  
+</section>
+
+
+</div>    
+</body>
+
+</html> 
